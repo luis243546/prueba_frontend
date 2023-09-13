@@ -1,0 +1,28 @@
+<h2 class="text-center"><b><i>PRODUCTOS</i></b></h2>
+
+<div class="container">
+    <table class="table table-hover table-bordered ">
+        <thead class="table-dark">
+            <tr>
+                <th style="text-align: center;">Codigo</th>
+                <th style="text-align: center;">Nombre</th>
+                <th style="text-align: center;">Marca</th>
+                <th style="text-align: center;">Modelo</th>
+                <th style="text-align: center;">Color</th>
+                <th style="text-align: center;">Stock</th>
+                <th style="text-align: center;">Precio</th>
+            </tr>
+        </thead>
+        <tbody class="table-ligth" style="background-color: white;">
+            <tr *ngFor= "let producto of productos">
+                <td>{{producto.codigo}}</td>
+                <td>{{producto.nombre}}</td>
+                <td>{{producto.marca}}</td>
+                <td>{{producto.modelo}}</td>
+                <td>{{producto.color}}</td>
+                <td>{{producto.stock}}</td>
+                <td>{{producto.precio}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
